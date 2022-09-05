@@ -12,7 +12,8 @@ const forecast = (latitude,longitude,callback) =>{
             weather_description : body.current.weather_descriptions[0],
             temperature: body.current.temperature,
             feelslike_temperature:body.current.feelslike,
-            precip:body.current.precip
+            precip:body.current.precip,
+            humidity: body.current.humidity
         });
         }
     });

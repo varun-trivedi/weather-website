@@ -16,7 +16,7 @@ weatherForm.addEventListener("submit",(event)=>{
             document.querySelector(".error").innerHTML = "Weather Description: "+data.forecast.weather_description;
             document.querySelector(".temp").innerHTML = "Temperature: "+data.forecast.temperature;
             document.querySelector(".ftemp").innerHTML = "Feels-Like Temperature: "+data.forecast.feelslike_temperature;
-            document.querySelector(".precip").innerHTML = "Chance of precipitation: "+data.forecast.precip;
+            document.querySelector(".precip").innerHTML = "Chance of precipitation: "+data.forecast.precip + "<br>Humidity: "+data.forecast.humidity;
         }
     })
 })
