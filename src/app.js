@@ -71,18 +71,7 @@ app.get("/weather",(req,res)=>{
     })
     
 })
-// app.get("/products",(req,res) =>{
-//     if(!req.query.search)
-//     {
-//         return res.send({
-//             error:"You must provide a search term"
-//         })
-//     }
-//     console.log(req.query.search)
-//     res.send({
-//         products:[]
-//     })
-// })
+
 app.get("*",(req,res)=>{
     res.render("404",{
         errorMessage: "Page Not Found",
